@@ -46,7 +46,8 @@ const createVisibleChangeChanel = delay =>
 	});
 
 export const DOCUMENT_VISIBILITY_CHANGE = "@@DOCUMENT_VISIBILITY_CHANGE";
-export const createVisibleChangeSaga = delay =>
+const defaultDelay = 30 * 1000; //30 ces.
+export const createVisibleChangeSaga = (delay = defaultDelay) =>
 	function* onChangeDocumentVisible() {
 		const chanel = yield call(createVisibleChangeChanel, delay);
 		try {

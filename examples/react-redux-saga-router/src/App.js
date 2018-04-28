@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from "react";
+import { Provider } from "react-redux";
+import { ConnectedRouter } from "react-router-redux";
 
-class App extends Component {
-  render() {
-    return (
-      <div>Hellow!</div>
-    );
-  }
-}
+import { history } from "./history";
+import { store } from "./redux/store";
+import { Root } from "./components/Root";
 
-export default App;
+export const App = () => (
+	<Provider store={store}>
+		<ConnectedRouter history={history}>
+			<Root />
+		</ConnectedRouter>
+	</Provider>
+);
