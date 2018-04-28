@@ -1,9 +1,9 @@
 {
 	"name": "redux-saga-document-visibility",
 	"version": "1.0.0",
-	"main": "lib-old/saga.js",
-	"module": "esm-old/saga.js",
-	"files": ["esm", "lib","esm-old", "lib-old", "src"],
+	"main": "lib-old/index.js",
+	"module": "esm-old/index.js",
+	"files": ["esm", "lib", "esm-old", "lib-old", "src"],
 	"scripts": {
 		"build:babel-old-commonjs":
 			"cross-env BABEL_OLD=true BABEL_OUTPUT=commonjs babel src/ --out-dir lib-old/",
