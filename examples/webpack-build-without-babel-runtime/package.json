@@ -1,0 +1,19 @@
+{
+  "name": "sssaga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "build":"npx webpack --profile --json > stats.json ; npx webpack-bundle-analyzer stats.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel-loader": "^8.0.0-beta",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "redux-saga-document-visibility": "^1.0.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
