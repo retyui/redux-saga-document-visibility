@@ -69,6 +69,7 @@ function* cancellableSync() {
 ## Example
 
 *   [Background Sync : React + Redux + redux-saga + react-router (API firebase.firestore)](https://github.com/retyui/redux-saga-document-visibility/tree/master/examples/react-redux-saga-router)
+*   [Webpack + babel config without Babel Runtime](https://github.com/retyui/redux-saga-document-visibility/blob/master/examples/webpack-build-without-babel-runtime/README.md)
 
 ## Options
 
