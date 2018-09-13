@@ -76,8 +76,6 @@ This means that if the user returns to this tab, the saga will dispatch the acti
 
 ## CommonJS modules & ES modules
 
-When Babel@7 will be released, I will delete the old js bundel.
-
 ```js
 import { createVisibleChangeSaga } from "redux-saga-document-visibility"; // CommonJS
 import { createVisibleChangeSaga } from "redux-saga-document-visibility/esm"; // ESM
