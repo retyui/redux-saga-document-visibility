@@ -1,28 +1,35 @@
 {
-	"name": "redux-saga-document-visibility",
-	"version": "1.0.0",
-	"main": "lib/index.js",
-	"module": "esm/index.js",
-	"files": ["esm", "lib", "src"],
-	"scripts": {
-		"build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/ --out-dir lib/",
-		"build:esm": "babel src/ --out-dir esm/",
-		"build": "npm-run-all --parallel build:*"
-	},
-	"peerDependencies": {
-		"redux-saga": "^0.16.0",
-		"@babel/runtime": "^7.0.0"
-	},
-	"keywords": ["redux", "redux-saga"],
-	"repository": "https://github.com/retyui/redux-saga-document-visibility",
-	"author": "David <vamnemne@gmail.com>",
-	"license": "MIT",
-	"devDependencies": {
-		"@babel/cli": "^7.0.0",
-		"@babel/core": "^7.0.0",
-		"@babel/plugin-transform-runtime": "^7.0.0",
-		"@babel/preset-env": "^7.0.0",
-		"cross-env": "^5.1.4",
-		"npm-run-all": "^4.1.2"
-	}
+  "name": "redux-saga-document-visibility",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/ --out-dir lib/",
+    "build:esm": "babel src/ --out-dir esm/",
+    "build": "npm-run-all --parallel build:*"
+  },
+  "peerDependencies": {
+    "redux-saga": "^0.16.0",
+    "@babel/runtime": "^7.0.0"
+  },
+  "keywords": [
+    "redux",
+    "redux-saga"
+  ],
+  "repository": "https://github.com/retyui/redux-saga-document-visibility",
+  "author": "David <vamnemne@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "cross-env": "^5.1.4",
+    "npm-run-all": "^4.1.2"
+  }
 }

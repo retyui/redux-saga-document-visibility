@@ -49,20 +49,20 @@ sagaMiddleware.run(visibilitySaga);
 import { DOCUMENT_VISIBILITY_CHANGE } from "redux-saga-document-visibility";
 
 function* cancellableSync() {
-    while (true) {
-        const { payload } = yield take(DOCUMENT_VISIBILITY_CHANGE);
-        console.log(payload.visibility);
-        if (payload.visibility) {
-            // do something
-        }
+  while (true) {
+    const { payload } = yield take(DOCUMENT_VISIBILITY_CHANGE);
+    console.log(payload.visibility);
+    if (payload.visibility) {
+      // do something
     }
+  }
 }
 ```
 
 ## Example
 
-*   [Background Sync : React + Redux + redux-saga + react-router (API firebase.firestore)](https://github.com/retyui/redux-saga-document-visibility/tree/master/examples/react-redux-saga-router)
-*   [Webpack adn Babel config for compile build without Babel Runtime](https://github.com/retyui/redux-saga-document-visibility/blob/master/examples/webpack-build-without-babel-runtime/README.md)
+- [Background Sync : React + Redux + redux-saga + react-router (API firebase.firestore)](https://github.com/retyui/redux-saga-document-visibility/tree/master/examples/react-redux-saga-router)
+- [Webpack adn Babel config for compile build without Babel Runtime](https://github.com/retyui/redux-saga-document-visibility/blob/master/examples/webpack-build-without-babel-runtime/README.md)
 
 ## Options
 
