@@ -9,19 +9,13 @@ Saga dispatch action if the page content is not visible to the user. The [Page V
 ## Install
 
 ```bash
-# for babel@6
-yarn add -D redux-saga-document-visibility redux-saga babel-runtime
-# for babel@7
-yarn add -D redux-saga-document-visibility redux-saga @babel/runtime
+yarn add redux-saga-document-visibility redux-saga @babel/runtime
 ```
 
 <details>
     <summary>Install with Npm</summary>
     <pre>
-    # for babel@6
-    npm install --save-dev redux-saga-document-visibility redux-saga babel-runtime
-    # for babel@7
-    yarn install --save-dev redux-saga-document-visibility redux-saga @babel/runtime
+    npm install redux-saga-document-visibility redux-saga @babel/runtime
     </pre>
 </details>
 
@@ -33,8 +27,7 @@ yarn add -D redux-saga-document-visibility redux-saga @babel/runtime
 import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 
-import { createVisibleChangeSaga } from "redux-saga-document-visibility"; // for babel@6
-// import { createVisibleChangeSaga } from "redux-saga-document-visibility/lib"; // for babel@7
+import { createVisibleChangeSaga } from "redux-saga-document-visibility";
 
 import reducer from "./reducers";
 import mySaga from "./sagas";
@@ -86,11 +79,6 @@ This means that if the user returns to this tab, the saga will dispatch the acti
 When Babel@7 will be released, I will delete the old js bundel.
 
 ```js
-// for babel@6
 import { createVisibleChangeSaga } from "redux-saga-document-visibility"; // CommonJS
-import { createVisibleChangeSaga } from "redux-saga-document-visibility/esm-old"; // ESM
-
-// for babel@7
-import { createVisibleChangeSaga } from "redux-saga-document-visibility/lib"; // CommonJS
 import { createVisibleChangeSaga } from "redux-saga-document-visibility/esm"; // ESM
 ```
